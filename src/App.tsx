@@ -21,6 +21,7 @@ function App() {
 
     const getMeData = () => {
         setData([])
+        console.log('Cleaned')
     }
 
     const posts = data.map(p => {
@@ -29,7 +30,7 @@ function App() {
 
     return (
         <div className="App">
-            <Button name={'Get data'} callback={getMeData}/>
+            <Button name={'Clean data'} callback={getMeData}/>
             <ul>
                 {posts}
             </ul>
